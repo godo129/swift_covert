@@ -2,22 +2,31 @@
 //  YellowViewController.swift
 //  ViewEx2
 //
-//  Created by 소프트웨어컴퓨터 on 2021/06/02.
+//  Created by comsoft on 2021/06/02.
 //
 
 import UIKit
 
-class YellowViewController: UITableViewCell {
+class YellowViewController: UIViewController {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBAction func dismissYellow(_ sender: UIButton) {
+        presentingViewController?.dismiss(animated: true, completion: nil)
+    }  // 화면 사라지게함 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
     }
+    
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    /*
+    // MARK: - Navigation
 
-        // Configure the view for the selected state
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
     }
+    */
 
 }

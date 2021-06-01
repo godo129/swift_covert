@@ -34,10 +34,10 @@
             </objects>
             <point key="canvasLocation" x="-23.188405797101453" y="93.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Yellow View Controller-->
         <scene sceneID="UHy-QZ-aYi">
             <objects>
-                <viewController storyboardIdentifier="YellowVC" id="BsH-AU-1kR" customClass="ViewController" customModule="ViewEx2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="YellowVC" id="BsH-AU-1kR" customClass="YellowViewController" customModule="ViewEx2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dYI-uB-Vdk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,6 +48,9 @@
                                 <color key="backgroundColor" red="0.84040371960000004" green="1" blue="0.97175237530000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="dismiss"/>
+                                <connections>
+                                    <action selector="dismissYellow:" destination="BsH-AU-1kR" eventType="touchUpInside" id="Hl5-VF-e9p"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WmL-hZ-9Yi"/>
